@@ -79,7 +79,7 @@ def save():
 
             with open("data.json", "w") as data_file:
                 # saving updated data with indent 4
-                json.dump(new_data, data_file, indent=4)
+                json.dump(data, data_file, indent=4)
         finally:
             # finally save the file
             website_entry.delete(0, END)
