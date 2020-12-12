@@ -36,3 +36,18 @@ logo_image = PhotoImage(file="security.png")
 canvas.create_image(150, 150, image=logo_image)
 # assign the grid for the canvas
 canvas.grid(row=0, column=1)
+
+# TODO: Labels
+
+# website labels
+website_label = Label(text="Website:", bg=GREENISH_WHITE, font=COURIER_FONT)
+# website label on grid
+website_label.grid(row=1, column=0)
+# email labels
+email_label = Label(text="Email:", bg=GREENISH_WHITE, font=COURIER_FONT)
+# email label on grid
+email_label.grid(row=2, column=0)
+# password labels
+password_label = Label(text="Password:", bg=GREENISH_WHITE, font=COURIER_FONT)
+# password label on grid
+password_label.grid(row=3, column=0)
