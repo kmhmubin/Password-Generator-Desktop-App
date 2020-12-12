@@ -69,3 +69,17 @@ email_entry.insert(0, "example@example.com")
 password_entry = Entry(width=43, font=COURIER_FONT)
 # password entry placement on grid
 password_entry.grid(row=3, column=1)
+
+# TODO: Buttons
+
+# generate password button
+generate_password_button = Button(text="Generate", font=COURIER_FONT, bg=LIGHT_SKY, command=password_generator)
+# generate button placement on grid
+generate_password_button.grid(row=3, column=2)
+
+# add password on file button
+save_button = Button(text="Save", width=55, bg=GREENISH_YELLOW, font=COURIER_FONT, command=save)
+# save button placement on the grid
+save_button.grid(row=4, column=1, columnspan=2, padx=10, pady=10)
+# window run
+window.mainloop()
