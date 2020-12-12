@@ -10,3 +10,4 @@ will save locally on your PC.
 * Automatic copy password on Clipboard
 
 ## Demo
+![Demo](https://github.com/kmhmubin/Password-Generator-Desktop-App/blob/master/password_generator_demo.gif)
