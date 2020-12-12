@@ -61,10 +61,27 @@ def save():
     if len(website) == 0 or len(password) == 0:
         messagebox.showinfo(title="Opps", message=" Please fill up the empty fields.")
     else:
-        # save the date on json file
-        with open("data.json", "a") as data_file:
-            # writing inside the json file with indent 4
-            json.dump(new_data, data_file, indent=4)
+        try:
+            # open the data file
+            with open("data.json", "r") as data_file:
+                # reading old data
+                data = json.load(data_file)
+        # if file not found
+        except FileNotFoundError:
+            # if file not found then create a new file
+            with open("data.json", "w") as data_file:
+                # saving updated data with indent 4
+                json.dump(new_data, data_file, indent=4)
+        # if file found
+        else:
+            # then update the old file
+            data.update(new_data)
+
+            with open("data.json", "w") as data_file:
+                # saving updated data with indent 4
+                json.dump(new_data, data_file, indent=4)
+        finally:
+            # finally save the file
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 
