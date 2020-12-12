@@ -1,2 +1,12 @@
 # Password-Generator-Desktop-App
-Generate Random Password for websites. Keep yourself secure.
+
+You can generate a random password for any website. Keep your password to your self and secure. All the password 
+will save locally on your PC.
+
+
+## Features
+* Generate Password
+* Search Saved Password
+* Automatic copy password on Clipboard
+
+## Demo
